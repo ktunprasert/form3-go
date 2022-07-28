@@ -39,6 +39,14 @@ Folder | Explanation
 
 ## Tests
 
+** IMPORTANT **
+Please if you're testing from a Windows machine to run the following command before running the containers.
+
+```bash
+$ sed 's/\r$//' -i health-check-api.bash
+$ cat -A health-check-api.bash // Expects line to end with $ instead of ^M$
+```
+
 Tests will be executed as soon as the containers are up and running
 
 ```bash
