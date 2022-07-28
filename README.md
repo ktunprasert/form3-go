@@ -35,7 +35,7 @@ Folder | Explanation
 ------ | -----------
 `/client/` | A reusable `Client` entity that exposes the base methods to be used by the `Repository` entity 
 `/domain/` | Application level entities to be used by all services 
-`/repository/` | The main application interface that other application can quickly reuse. Each repository exposes a meaningful `Create`, `Fetch` and `Delete` method that contains exactly what the user needs without any extras
+`/repository/` | The main application interface that other application can quickly reuse. Each repository exposes a meaningful `Create`, `Fetch` and `Delete` method that contains exactly what the user needs without any extras. This can also be further extended to include entity specific logic like `AccountRepository.ListFromCountry()` or `AccountRepository.ListByBankID()`
 
 ## Tests
 
