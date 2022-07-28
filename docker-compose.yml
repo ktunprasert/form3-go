@@ -50,4 +50,4 @@ services:
       - .:/go/src/app
     environment:
       HOST: http://accountapi:8080
-    command: go test -v sdk/repository/account_test.go
+    command: ["bash", "health-check-api.bash", "go", "test", "-v", "sdk/repository/account_test.go"]
